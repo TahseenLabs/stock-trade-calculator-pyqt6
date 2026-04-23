@@ -1,6 +1,6 @@
 # Stock Trade Profit Calculator
 
-A desktop app built with **Python** and **PyQt6** that lets you calculate the profit or loss from buying and selling stocks on specific dates. Select a stock, pick your buy and sell dates from a calendar, set a quantity — and the app instantly shows your purchase total, sell total, profit, or loss.
+A desktop app built with **Python** and **PyQt6** that lets you calculate the profit or loss from buying and selling stocks on specific dates. Select a stock, pick your buy and sell dates from a calendar, set a quantity and the app instantly shows your purchase total, sell total, profit, or loss.
 
 ---
 
@@ -9,26 +9,38 @@ A desktop app built with **Python** and **PyQt6** that lets you calculate the pr
 ### Main Interface
 > Full view of the app showing stock selection, dual calendars, and live-updating totals.
 
-![Main Interface](docs/screenshots/main-interface.png)
+![Main Interface](Assets/main-interface-img.png)
 
 ### Stock Dropdown
 > Dropdown populated with all available stocks from the dataset (Amazon, Apple, Bitcoin, Tesla and more).
 
-![Stock Selection](docs/screenshots/stock-selection.png)
+![Stock Selection](Assets/stock-dropdown-open-img.png)
 
-### Selection Summary & Totals
-> Live summary of current selections with automatically calculated purchase total, sell total, profit and loss.
+### Selection Summary
+> Live summary of current selections showing all selected items in real time.
 
-![Summary and Totals](docs/screenshots/summary-totals.png)
+![Selection Summary](Assets/summary-img.png)
+
+### Totals Overview
+> Automatically calculated purchase total, sell total, and profit/loss based on current selections.
+
+![Totals Overview](Assets/total-img.png)
 
 ---
 
 ## Project Structure
 
 ```
-stock-trade-calculator/
-├── StockTradeCalculator.py     # Main application, all UI and calculation logic
-└── Stock_Market_Dataset.csv    # Historical stock price data (CSV)
+.
+├── Assets
+│ ├── main-interface-img.png 
+│ ├── stock-dropdown-open-img.png 
+│ ├── summary-img.png 
+│ └── total-img.png 
+│
+├── README.md # Project documentation and usage guide
+├── StockTradeCalculator.py # Main application logic (GUI + calculations)
+└── Stock_Market_Dataset.csv # Dataset used for stock prices and market data
 ```
 
 ---
